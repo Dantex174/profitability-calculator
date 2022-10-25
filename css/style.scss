@@ -1,0 +1,33 @@
+.relevance {
+    display: flex;
+    flex-direction: column;
+    .title {
+        margin: 0 auto;
+        font-size: 34px;
+         &__form {
+            margin-top: 10px;
+            font-size: 26px;
+         }
+    }
+    .from-input, .form-output {
+        margin: 0 auto;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-result {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: blue;
+        border-radius: 5px;
+        color: white;
+    }
+    p {
+        margin: 0 auto;
+        margin-top: 25px;
+        font-size: 26px;
+    }
+    textarea {
+        resize: none;
+    }
+}
