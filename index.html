@@ -8,19 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>      
-    <div class="relevance">
-        <h1 class="title">Калькулятор рентабельности</h1>
-        <div class="from-input">
-            <h2 class="title__form">Закупочная цена</h2>
-            <input type="text" size="8"id="price" placeholder="Цена">
-            <button class="btn-result" onclick="f1()">Посчитать</button>
+    <section class="section">
+        <div class="section__wrapper">
+            <div class="title">Калькулятор рентабельности</div>
+            <div class="price">
+                <div class="price__title">Цена закупки</div>
+                <input id="price" type="text" class="price__input">
+            </div>
+            <button onclick="f1()" class="btn">Посчитать</button>
+            <div class="result">
+                <div class="result__title">Цена продажи</div>
+                <textarea id="out" name="" id="" cols="12" rows="1"></textarea>
+            </div>
+            <p class="rate" id="info"></p>
+            <div class="link">
+                <a href="" class="reset">Сброс</a>
+                <a href="">Формулы расчета</a>
+            </div>
         </div>
-        <div class="form-output">
-            <h2 class="title__form">Интернет цена</h2>
-            <textarea name="" id="out" cols="10" rows="1" placeholder="Результат"></textarea>
-        </div>
-        <p id="info"></p>
-    </div>
-     <script src="js/script.js"></script>    
+    </section>
+
+
+    <script src="js/script.js"></script>    
 </body>
 </html>

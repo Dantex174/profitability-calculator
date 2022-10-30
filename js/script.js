@@ -1,3 +1,9 @@
+document.onkeypress = function (event) {
+    if (event.code=='Enter') {
+        f1();
+    }
+}  
+
 function f1 (){
     let price, price2, price3 = 0; 
     let info = document.getElementById('info');
