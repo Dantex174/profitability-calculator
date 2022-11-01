@@ -3,7 +3,11 @@ document.onkeypress = function (event) {
         f1();
     }
 }  
-
+function alert() {
+    document.getElementById('formule')
+    alert('blabla');
+}
+// document.getElementById('formule').onclick = alert();
 function f1 (){
     let price, price2, price3 = 0; 
     let info = document.getElementById('info');
@@ -17,12 +21,12 @@ function f1 (){
         }
             
         if(price>599 && price<1500){
-            price2 = price*10/4,8;
+            price2 = price*10/4.8;
             info.innerHTML += '52%';
         }
             
         if(price>1499 && price<3000){
-            price2 = price*10/5,8;
+            price2 = price*10/5.8;
             info.innerHTML += '42%';
         }
             
@@ -37,7 +41,7 @@ function f1 (){
         }
             
         if(price>4999){
-            price2 = price*10/7,5;
+            price2 = price*10/7.5;
             info.innerHTML += '25%';
         }
     price3 = Math.ceil(price2)    
